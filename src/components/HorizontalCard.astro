@@ -1,6 +1,6 @@
 ---
 const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
-import { Image} from "astro:assets";
+// import { Image} from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 ---
 
@@ -10,18 +10,18 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 >
     <a href={url} target={target}>
         <div class="hero-content flex-col md:flex-row">
-            {
-                img && (
-                <Image
-                 src={img}
-                 width={750}
-                 height={422}
-                 format="webp"
-                 alt={title}
-                 class="max-w-full md:max-w-[13rem] rounded-lg"
-                />
-                )
-            }
+            <!--{-->
+            <!--    img && (-->
+            <!--    <Image-->
+            <!--     src={img}-->
+            <!--     width={750}-->
+            <!--     height={422}-->
+            <!--     format="webp"-->
+            <!--     alt={title}-->
+            <!--     class="max-w-full md:max-w-[13rem] rounded-lg"-->
+            <!--    />-->
+            <!--    )-->
+            <!--}-->
             <div class="grow w-full">
                 <h1 class="text-xl font-bold">
                     {title}
